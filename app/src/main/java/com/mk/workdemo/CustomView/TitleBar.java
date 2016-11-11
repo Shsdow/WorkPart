@@ -48,19 +48,15 @@ public class TitleBar extends LinearLayout {
         mTvTitle = (TextView) titleBar.findViewById(R.id.title_bar_title);
     }
 
-    public ImageView getIvRigth() {
+    public ImageView getIvRight() {
         return mIvRight;
     }
+
 
     //设置标题内容、颜色
     public void setTitleBarTextAndColor(String titleText, int titleColor) {
         mTvTitle.setText(titleText);
         mTvTitle.setTextColor(ContextCompat.getColor(getContext(), titleColor));
-    }
-
-    //设置标题颜色，默认白色
-    public void setTitleText(String titleText) {
-        setTitleBarTextAndColor(titleText, R.color.white);
     }
 
     //设置左边的图标
@@ -72,42 +68,27 @@ public class TitleBar extends LinearLayout {
         mIvLeft.setImageDrawable(ContextCompat.getDrawable(getContext(), drawableId));
     }
 
-    //设置左边的文字、颜色、大小（默认为14）
-    public void setLeftTextAndColorAndSize(String leftText, int textColor) {
-
-        setLeftTextAndColorAndSize(leftText, textColor, 14);
-    }
-
+    //设置左边的文字、颜色、大小
     public void setLeftTextAndColorAndSize(String leftText, int textColor, float textSize) {
         mIvLeft.setVisibility(GONE);
         mTvLeft.setVisibility(VISIBLE);
         mTvLeft.setText(leftText);
         mTvLeft.setTextColor(ContextCompat.getColor(getContext(), textColor));
-        mTvLeft.setTextScaleX(textSize);
+        mTvLeft.setTextSize(textSize);
     }
 
 
     //设置右边文字的大小、颜色、大小
-    public void setRightTextAndColor(String rightText, int textColor) {
-
-        setRightTextAndColorAndSize(rightText, textColor, 14);
-    }
-
     public void setRightTextAndColorAndSize(String rightText, int textColor, float textSize) {
         mIvRight.setVisibility(GONE);
         mTvRight.setVisibility(VISIBLE);
         mTvRight.setText(rightText);
         mTvRight.setTextColor(ContextCompat.getColor(getContext(), textColor));
-        mTvRight.setTextScaleX(textSize);
+        mTvRight.setTextSize(textSize);
     }
 
 
     //设置右边图标和padding
-    public void setRightDrawable(int drawableId) {
-
-        setRightDrawabelAndPadding(drawableId, 0);
-    }
-
     public void setRightDrawabelAndPadding(int drawableId, int paddingSize) {
         mIvRight.setVisibility(VISIBLE);
         mTvRight.setVisibility(GONE);
@@ -117,11 +98,6 @@ public class TitleBar extends LinearLayout {
     }
 
     //设置左边图标和padding
-    public void setLefttDrawable(int drawableId) {
-
-        setLeftDrawabelAndPadding(drawableId, 0);
-    }
-
     public void setLeftDrawabelAndPadding(int drawableId, int paddingSize) {
         mIvLeft.setVisibility(VISIBLE);
         mTvLeft.setVisibility(GONE);
@@ -130,16 +106,12 @@ public class TitleBar extends LinearLayout {
         mIvRight.setPadding(dp, dp, dp, dp);
     }
 
-    public void setRightFirstDrawable(int drawableId) {
-
-        setRightFistDrawableAndPadding(drawableId, 0);
-    }
 
     public void setRightFistDrawableAndPadding(int drawableId, int paddingSize) {
+        mIvFistRight.setVisibility(VISIBLE);
         mIvFistRight.setImageDrawable(ContextCompat.getDrawable(getContext(), drawableId));
         int dp = dip2px(getContext(), paddingSize);
         mIvFistRight.setPadding(dp, dp, dp, dp);
-
     }
 
     /**

@@ -24,6 +24,7 @@
                 android:id="@+id/title_bar_left_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:visibility="gone"
                 tools:src="@mipmap/ic_launcher" />
 
