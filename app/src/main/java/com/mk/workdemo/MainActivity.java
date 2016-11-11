@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.mk.workdemo.Activities.SecondAcitivity;
 import com.mk.workdemo.Activities.TitleActivity;
+import com.mk.workdemo.Utils.LogUtils;
 
 public class MainActivity extends TitleActivity {
 
@@ -23,6 +24,7 @@ public class MainActivity extends TitleActivity {
                 startActivity(new Intent(MainActivity.this, SecondAcitivity.class));
             }
         });
+        LogUtils.d("我在MainActivity中");
 
     }
 }
