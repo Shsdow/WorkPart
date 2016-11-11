@@ -1,11 +1,29 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/blue1</item>
+        <item name="colorPrimaryDark">@color/blue2</item>
+        <item name="colorAccent">@color/blue3</item>
+    </style>
+
+    <!--custom style-->
+
+    <style name="AnimActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
+    </style>
+    <!--定义activity进出屏幕的动画-->
+    <style name="ActivityAnim" parent="@android:style/Animation.Activity">
+        <!--当打开一个新的Activity，这Animation就会作用于接下来进入屏幕的Activity-->
+        <item name="android:activityOpenEnterAnimation">@anim/anim_trans_open_right_in</item>
+        <!--当打开一个新的Activity，这Animation就会作用于接下来退出屏幕的Activity-->
+        <item name="android:activityOpenExitAnimation">@anim/anim_trans_open_left_exit</item>
+        <!--当关闭现在的Activity，这个Animation就会作用于接下来的进入屏幕的Activity-->
+        <item name="android:activityCloseEnterAnimation">@anim/anim_trans_close_left_in</item>
+        <!--当关闭现在的Activity，这个Animation就会作用于接下来的要退出屏幕的Activity-->
+        <item name="android:activityCloseExitAnimation">@anim/anim_trans_close_right_out</item>
+
     </style>
 
 </resources>
