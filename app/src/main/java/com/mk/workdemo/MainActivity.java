@@ -1,9 +1,11 @@
 package com.mk.workdemo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.mk.workdemo.Activities.SecondAcitivity;
+import com.mk.workdemo.Activities.TitleActivity;
 
 public class MainActivity extends TitleActivity {
 

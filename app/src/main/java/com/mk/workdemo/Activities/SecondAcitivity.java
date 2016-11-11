@@ -1,7 +1,8 @@
-package com.mk.workdemo;
+package com.mk.workdemo.Activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.mk.workdemo.R;
 
 public class SecondAcitivity extends TitleActivity {
 

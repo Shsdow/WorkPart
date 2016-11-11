@@ -1,6 +1,4 @@
-package com.mk.workdemo;
-
-import android.app.Activity;
+package com.mk.workdemo.Activities;
 
 import java.util.ArrayList;
 import java.util.List;
