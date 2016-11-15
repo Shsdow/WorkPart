@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_dialog_test"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    tools:context="com.mk.workdemo.MainActivity">
+    tools:context="com.mk.workdemo.TESTActivities.DialogTestActivity">
+    <TextView
+        android:id="@+id/tv_dialog_confirm"
+        android:layout_margin="20dp"
+        android:background="@drawable/bac_btn"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="确认Dialog" />
 
     <TextView
-        android:id="@+id/tv_jump"
-        android:layout_marginTop="10dp"
+        android:id="@+id/tv_dialog_alert_one"
+        android:layout_margin="20dp"
         android:background="@drawable/bac_btn"
         android:layout_width="match_parent"
         android:paddingBottom="10dp"
@@ -19,10 +28,10 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="点击跳转界面" />
+        android:text="选择Dialog  one" />
     <TextView
-        android:id="@+id/tv_text_showdialog"
-        android:layout_marginTop="10dp"
+        android:id="@+id/tv_dialog_alert_two"
+        android:layout_margin="20dp"
         android:background="@drawable/bac_btn"
         android:layout_width="match_parent"
         android:paddingBottom="10dp"
@@ -30,10 +39,10 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="测试ShowDialog" />
+        android:text="选择Dialog two" />
     <TextView
-        android:id="@+id/tv_image_compress"
-        android:layout_marginTop="10dp"
+        android:id="@+id/tv_dialog_edit"
+        android:layout_margin="20dp"
         android:background="@drawable/bac_btn"
         android:layout_width="match_parent"
         android:paddingBottom="10dp"
@@ -41,7 +50,6 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="压缩图片" />
-
+        android:text="编辑Dialog" />
 
 </LinearLayout>

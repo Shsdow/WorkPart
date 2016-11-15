@@ -17,7 +17,9 @@
         </activity>
         <activity android:name=".Activities.BaseAcitivity" />
         <activity android:name=".Activities.TitleActivity" />
-        <activity android:name=".Activities.SecondAcitivity"></activity>
+        <activity android:name=".Activities.SecondAcitivity" />
+        <activity android:name=".TESTActivities.DialogTestActivity" />
+        <activity android:name=".ImageCompress.ImageCompressActivity"></activity>
     </application>
 
 </manifest>
