@@ -9,7 +9,16 @@
     </style>
 
     <!--custom style-->
-
+    <!--dialog主题风格-->
+    <style name="dialogStyle" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    
+    
+    
+    <!--进出acvitivity的动画主题-->
     <style name="AnimActivity" parent="AppTheme">
         <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
     </style>

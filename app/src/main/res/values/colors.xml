@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#11000000</color>
+    <color name="transparent2">#33000000</color>
+    <color name="transparent3">#66000000</color>
+
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
@@ -10,4 +16,9 @@
 
     <color name="white">#ffffff</color>
     <color name="grey1">#cbdedd</color>
+    <color name="grey2">#cecece</color>
+    <color name="grey3">#999999</color>
+
+    <color name="yellow1">#ff9100</color>
+    <color name="text_default">#ff2c2c2c</color>
 </resources>
