@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.mk.workdemo.Activities.SecondAcitivity;
 import com.mk.workdemo.Activities.TitleActivity;
+import com.mk.workdemo.ImageCompress.ImageCompressActivity;
 import com.mk.workdemo.TESTActivities.DialogTestActivity;
 import com.mk.workdemo.Utils.LogUtils;
 import com.mk.workdemo.Utils.ShowDialog;
@@ -24,17 +25,18 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
         LogUtils.d("我在MainActivity中");
         findViewById(R.id.tv_jump).setOnClickListener(this);
         findViewById(R.id.tv_text_showdialog).setOnClickListener(this);
+        findViewById(R.id.tv_image_compress).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.tv_jump:
                 startActivity(new Intent(MainActivity.this, SecondAcitivity.class));
                 break;
             case R.id.tv_text_showdialog:
                 startActivity(new Intent(MainActivity.this, DialogTestActivity.class));
-            break;
+                break;
             case R.id.tv_image_compress:
                 startActivity(new Intent(MainActivity.this, ImageCompressActivity.class));
                 break;
