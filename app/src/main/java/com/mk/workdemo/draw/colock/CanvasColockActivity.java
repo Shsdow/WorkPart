@@ -11,5 +11,6 @@ public class CanvasColockActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(new Clock(this));
+        
     }
 }
