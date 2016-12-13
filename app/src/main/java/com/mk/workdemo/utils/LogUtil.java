@@ -1,4 +1,4 @@
-package com.mk.workdemo.Utils;
+package com.mk.workdemo.utils;
 
 import android.util.Log;
 
@@ -11,11 +11,12 @@ import java.util.Locale;
  */
 
 
-public class LogUtils {
+public class LogUtil {
     private static boolean isDebug = BuildConfig.DEBUG;
 
     private static String generateTag() {
         String tag = "%s-%s(Line:%d)";
+        //StackTraceElement 堆栈帧 对象
 //        StackTraceElement caller = new Throwable().getStackTrace()[2];
         StackTraceElement caller = Thread.currentThread().getStackTrace()[2];
         String className = caller.getClassName();

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mk.workdemo.TESTActivities.DialogTestActivity">
+    tools:context="com.mk.workdemo.testActivities.DialogTestActivity">
     <TextView
         android:id="@+id/tv_dialog_confirm"
         android:layout_margin="20dp"

@@ -3,14 +3,14 @@ package com.mk.workdemo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
-import com.mk.workdemo.Activities.SecondAcitivity;
-import com.mk.workdemo.Activities.TitleActivity;
-import com.mk.workdemo.ImageCompress.ImageCompressActivity;
-import com.mk.workdemo.TESTActivities.DialogTestActivity;
-import com.mk.workdemo.Utils.LogUtils;
-import com.mk.workdemo.Utils.ShowDialog;
+import com.mk.workdemo.activities.SecondAcitivity;
+import com.mk.workdemo.activities.TitleActivity;
+import com.mk.workdemo.draw.colock.CanvasColockActivity;
+import com.mk.workdemo.imageCompress.ImageCompressActivity;
+import com.mk.workdemo.surfaceview_camera.TakePhotoActivity;
+import com.mk.workdemo.testActivities.DialogTestActivity;
+import com.mk.workdemo.utils.LogUtil;
 
 public class MainActivity extends TitleActivity implements View.OnClickListener {
 
@@ -22,10 +22,12 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
 //        setLeftAndIcon("后退", R.drawable.ic_action_add, false);
         setRightText("123");
         setRightFirstDrawable(R.drawable.ic_action_exit);
-        LogUtils.d("我在MainActivity中");
+        LogUtil.d("我在MainActivity中");
         findViewById(R.id.tv_jump).setOnClickListener(this);
         findViewById(R.id.tv_text_showdialog).setOnClickListener(this);
         findViewById(R.id.tv_image_compress).setOnClickListener(this);
+        findViewById(R.id.tv_capture_pic).setOnClickListener(this);
+        findViewById(R.id.tv_colock).setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +41,12 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
                 break;
             case R.id.tv_image_compress:
                 startActivity(new Intent(MainActivity.this, ImageCompressActivity.class));
+                break;
+            case R.id.tv_capture_pic:
+                startActivity(new Intent(MainActivity.this,TakePhotoActivity.class));
+                break;
+            case R.id.tv_colock:
+                startActivity(new Intent(MainActivity.this,CanvasColockActivity.class));
                 break;
         }
 

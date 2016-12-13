@@ -1,4 +1,4 @@
-package com.mk.workdemo.Utils;
+package com.mk.workdemo.utils;
 
 import android.app.Activity;
 import android.content.Context;

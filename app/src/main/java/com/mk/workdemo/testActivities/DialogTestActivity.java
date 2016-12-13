@@ -1,12 +1,12 @@
-package com.mk.workdemo.TESTActivities;
+package com.mk.workdemo.testActivities;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.mk.workdemo.Activities.TitleActivity;
+import com.mk.workdemo.activities.TitleActivity;
 import com.mk.workdemo.R;
-import com.mk.workdemo.Utils.ShowDialog;
+import com.mk.workdemo.utils.ShowDialog;
 
 public class DialogTestActivity extends TitleActivity implements View.OnClickListener {
 
@@ -65,7 +65,7 @@ public class DialogTestActivity extends TitleActivity implements View.OnClickLis
                     @Override
                     public void onClick(View view) {
                         Toast.makeText(DialogTestActivity.this,""+view.getTag(),Toast.LENGTH_SHORT).show();
-//                        LogUtils.d(view.getTag());
+//                        LogUtil.d(view.getTag());
                     }
                 },dia);
                 break;

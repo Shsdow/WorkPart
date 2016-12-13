@@ -1,4 +1,4 @@
-package com.mk.workdemo.Activities;
+package com.mk.workdemo.activities;
 
 import java.util.ArrayList;
 import java.util.List;

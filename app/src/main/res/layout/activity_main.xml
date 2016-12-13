@@ -42,6 +42,29 @@
         android:gravity="center"
         android:layout_height="wrap_content"
         android:text="压缩图片" />
+    <TextView
+        android:id="@+id/tv_capture_pic"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bac_btn"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="进行拍照" />
+    <TextView
+        android:id="@+id/tv_colock"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bac_btn"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="canvas the colock" />
+
 
 
 </LinearLayout>

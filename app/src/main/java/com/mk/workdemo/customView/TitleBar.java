@@ -1,4 +1,4 @@
-package com.mk.workdemo.CustomView;
+package com.mk.workdemo.customView;
 
 import android.app.Activity;
 import android.content.Context;

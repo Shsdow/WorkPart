@@ -1,9 +1,8 @@
-package com.mk.workdemo.ImageCompress;
+package com.mk.workdemo.imageCompress;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.mk.workdemo.Activities.TitleActivity;
+import com.mk.workdemo.activities.TitleActivity;
 import com.mk.workdemo.R;
 
 public class ImageCompressActivity extends TitleActivity {

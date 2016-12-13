@@ -1,4 +1,4 @@
-package com.mk.workdemo.Activities;
+package com.mk.workdemo.activities;
 
 import android.support.annotation.IntDef;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.mk.workdemo.CustomView.TitleBar;
+import com.mk.workdemo.customView.TitleBar;
 import com.mk.workdemo.R;
 
 import java.lang.annotation.Retention;

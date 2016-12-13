@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WorkDemo</string>
+
+    <string name="size">图片大小：%1$2d k</string>
 </resources>
