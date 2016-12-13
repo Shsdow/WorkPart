@@ -65,7 +65,6 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
                 LogUtil.d("iv_image_show_pre:进行拍照");
                 takeph();
                 break;
-
         }
     }
 
@@ -105,11 +104,7 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
 
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(bitmap, rect, rect, paint);
-//        canvas.restore();
-
         return newBitmap;
-
-
     }
 
     public static Bitmap framedImage(Bitmap bitmap) {

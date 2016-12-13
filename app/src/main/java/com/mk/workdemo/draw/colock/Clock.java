@@ -23,6 +23,10 @@ public class Clock extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    /**
+     * 重写onDraw()方法进行绘制
+     * @param canvas
+     */
     @Override
     protected void onDraw(Canvas canvas) {
         // 获取屏幕宽高参数
