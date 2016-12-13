@@ -79,6 +79,7 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
                 imageShow.setImageBitmap(newBitmap);
 
                 imageSizeShow.setText(getString(R.string.size, bitmap.getByteCount()));
+                
             }
         });
     }
