@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mk.workdemo">
+    package="com.mk.workdemo" >
 
     <uses-feature android:name="android.hardware.camera" />
 
@@ -14,8 +14,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AnimActivity">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AnimActivity" >
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +28,14 @@
         <activity android:name=".testActivities.DialogTestActivity" />
         <activity android:name=".imageCompress.ImageCompressActivity" />
         <activity android:name=".surfaceview_camera.TakePhotoActivity" />
-        <activity android:name=".draw.colock.CanvasColockActivity"></activity>
+        <activity android:name=".draw.colock.CanvasColockActivity" />
+        <activity android:name=".activities.RotateRectActivity" />
+        <activity android:name=".draw.colock.MatrixChangeAcitvity" >
+        </activity>
+        <activity android:name=".drawable.DrawableActivity" >
+        </activity>
+        <activity android:name=".drawable.LayerDrawableActivity" >
+        </activity>
     </application>
 
 </manifest>

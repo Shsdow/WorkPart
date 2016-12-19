@@ -73,18 +73,18 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
         newCameraPreview.setPicCallBack(new NewCameraPreview.PicCallBack() {
             @Override
             public void callback(Bitmap bitmap) {
-//                Bitmap newBitmap = setRotate(bitmap,40);
-                Bitmap newBitmap = framedImage(bitmap);
+                Bitmap newBitmap = setRotate(bitmap,0);
+//                Bitmap newBitmap = framedImage(bitmap);
                 LogUtil.d("newBItmap weight and height :" + newBitmap.getWidth() + "," + newBitmap.getHeight());
                 imageShow.setImageBitmap(newBitmap);
 
                 imageSizeShow.setText(getString(R.string.size, bitmap.getByteCount()));
-                
+
             }
         });
     }
 
-    //生成带圆角的bitmap
+    //生成带圆角的矩形
     private Bitmap setRotate(Bitmap bitmap, int radiu) {
         //利用原图片新建一张新的图片bitmap,这样的bitmap的大小与原先相同
         Bitmap newBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
@@ -99,7 +99,7 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
         Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
         RectF rectF = new RectF(rect);
         //消除掉画布原先的图像
-        canvas.drawARGB(0, 0, 0, 0);
+//        canvas.drawARGB(0, 0, 0, 0);
         //新建一个圆弧矩形
         canvas.drawRoundRect(rectF, radiu, radiu, paint);
 

@@ -4,9 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.mk.workdemo.activities.RotateRectActivity;
 import com.mk.workdemo.activities.SecondAcitivity;
 import com.mk.workdemo.activities.TitleActivity;
 import com.mk.workdemo.draw.colock.CanvasColockActivity;
+import com.mk.workdemo.draw.colock.MatrixChangeAcitvity;
+import com.mk.workdemo.drawable.DrawableActivity;
 import com.mk.workdemo.imageCompress.ImageCompressActivity;
 import com.mk.workdemo.surfaceview_camera.TakePhotoActivity;
 import com.mk.workdemo.testActivities.DialogTestActivity;
@@ -28,6 +31,9 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
         findViewById(R.id.tv_image_compress).setOnClickListener(this);
         findViewById(R.id.tv_capture_pic).setOnClickListener(this);
         findViewById(R.id.tv_colock).setOnClickListener(this);
+        findViewById(R.id.tv_rotate_canvas).setOnClickListener(this);
+        findViewById(R.id.tv_matrix_change).setOnClickListener(this);
+        findViewById(R.id.tv_drawable).setOnClickListener(this);
     }
 
     @Override
@@ -43,10 +49,20 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
                 startActivity(new Intent(MainActivity.this, ImageCompressActivity.class));
                 break;
             case R.id.tv_capture_pic:
-                startActivity(new Intent(MainActivity.this,TakePhotoActivity.class));
+                startActivity(new Intent(MainActivity.this, TakePhotoActivity.class));
                 break;
             case R.id.tv_colock:
-                startActivity(new Intent(MainActivity.this,CanvasColockActivity.class));
+                startActivity(new Intent(MainActivity.this, CanvasColockActivity.class));
+                break;
+            case R.id.tv_rotate_canvas:
+                startActivity(new Intent(MainActivity.this, RotateRectActivity.class));
+                break;
+            case R.id.tv_matrix_change:
+                startActivity(new Intent(MainActivity.this, MatrixChangeAcitvity.class));
+                break;
+            case R.id.tv_drawable:
+
+                startActivity(new Intent(MainActivity.this,DrawableActivity.class));
                 break;
         }
 

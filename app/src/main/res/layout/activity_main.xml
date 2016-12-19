@@ -5,65 +5,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingRight="20dp"
     android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     tools:context="com.mk.workdemo.MainActivity">
 
     <TextView
         android:id="@+id/tv_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/bac_btn"
-        android:layout_width="match_parent"
+        android:gravity="center"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="点击跳转界面" />
+        android:text="点击跳转界面"
+        android:textColor="@color/white" />
     <TextView
         android:id="@+id/tv_text_showdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/bac_btn"
-        android:layout_width="match_parent"
+        android:gravity="center"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="测试ShowDialog" />
+        android:text="测试ShowDialog"
+        android:textColor="@color/white" />
     <TextView
         android:id="@+id/tv_image_compress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/bac_btn"
-        android:layout_width="match_parent"
+        android:gravity="center"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="压缩图片" />
+        android:text="压缩图片"
+        android:textColor="@color/white" />
     <TextView
         android:id="@+id/tv_capture_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/bac_btn"
-        android:layout_width="match_parent"
+        android:gravity="center"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="进行拍照" />
+        android:text="进行拍照"
+        android:textColor="@color/white" />
     <TextView
         android:id="@+id/tv_colock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bac_btn"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="canvas the colock"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/tv_rotate_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bac_btn"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="圆角矩形"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/tv_matrix_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bac_btn"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="矩阵变换"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_drawable"
         android:layout_marginTop="10dp"
         android:background="@drawable/bac_btn"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
         android:textColor="@color/white"
         android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="canvas the colock" />
+        android:text="Drawable" />
+
 
 
 
