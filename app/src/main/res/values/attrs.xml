@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--可设定图片大小的RadioButton样式-->
+    <declare-styleable name="DrawableRadioButton">
+        <attr name="radio_left_height" format="dimension" />
+        <attr name="radio_left_width" format="dimension" />
+        <attr name="radio_right_height" format="dimension" />
+        <attr name="radio_right_width" format="dimension" />
+        <attr name="radio_top_height" format="dimension" />
+        <attr name="radio_top_width" format="dimension" />
+        <attr name="radio_bottom_height" format="dimension" />
+        <attr name="radio_bottom_width" format="dimension" />
+    </declare-styleable>
+
+</resources>
