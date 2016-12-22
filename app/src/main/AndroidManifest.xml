@@ -30,10 +30,11 @@
         <activity android:name=".surfaceview_camera.TakePhotoActivity" />
         <activity android:name=".draw.colock.CanvasColockActivity" />
         <activity android:name=".activities.RotateRectActivity" />
-        <activity android:name=".draw.colock.MatrixChangeAcitvity"></activity>
-        <activity android:name=".drawable.DrawableActivity"></activity>
-        <activity android:name=".drawable.LayerDrawableActivity"></activity>
-        <activity android:name=".activities.CustomButtonActivity"></activity>
+        <activity android:name=".draw.colock.MatrixChangeAcitvity" />
+        <activity android:name=".drawable.DrawableActivity" />
+        <activity android:name=".drawable.LayerDrawableActivity" />
+        <activity android:name=".activities.CustomButtonActivity" />
+        <activity android:name=".activities.MyClassLoaderActivity"></activity>
     </application>
 
 </manifest>

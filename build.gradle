@@ -1,9 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
+//buildscript：声明这个脚本本身所需要的依赖.
 buildscript {
+    //依赖库
     repositories {
         jcenter()
     }
+    //依赖
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0-beta1'
 
@@ -11,13 +13,25 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+/**
+ * 配置这个项目和这个项目的子项
+ * 这个 configuration closure（配置闭包） 里的内容会被设置
+ * 为当前 project 以及其所有 sub-project 中依赖文件的查找路径.
+ * 这里的写法意味着, 所有的 project 都会在 jcenter() 中寻找依赖.
+ */
 allprojects {
     repositories {
         jcenter()
     }
 }
 
+/**
+ * 这是定义了一个新的 task, 叫做 clean. 其类型是 Delete. 实际上, Android Plugin 内置了 clean 方法,
+ * 该方法位于 module 中.
+ * Module 中内置的 clean 方法只会清理 Module 中的文件并删除 Module 中的 build 目录,
+ * 但是工程根目录下的 build 文件是没人清理的,
+ * 所以这里定义的 clean 方法即删除项目目录下的 build 文件夹.
+ */
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

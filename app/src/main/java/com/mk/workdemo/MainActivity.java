@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.mk.workdemo.activities.CustomButtonActivity;
+import com.mk.workdemo.activities.MyClassLoaderActivity;
 import com.mk.workdemo.activities.RotateRectActivity;
 import com.mk.workdemo.activities.SecondAcitivity;
 import com.mk.workdemo.activities.TitleActivity;
@@ -36,6 +37,7 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
         findViewById(R.id.tv_matrix_change).setOnClickListener(this);
         findViewById(R.id.tv_drawable).setOnClickListener(this);
         findViewById(R.id.tv_rbs).setOnClickListener(this);
+        findViewById(R.id.tv_classloader).setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +72,10 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
             case R.id.tv_rbs:
 
                 startActivity(new Intent(MainActivity.this,CustomButtonActivity.class));
+                break;
+            case R.id.tv_classloader:
+
+                startActivity(new Intent(MainActivity.this,MyClassLoaderActivity.class));
                 break;
         }
 

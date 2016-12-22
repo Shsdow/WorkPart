@@ -1,8 +1,23 @@
+/**
+ * 引用了'com.android.tools.build:gradle:2.3.0-beta1'的“com.android.application”插件
+ *
+ * Application: 对应 com.android.application. 编译的结果是一个 apk
+ * Android Library: 对应 com.android.library. 编译结果为 aar
+ * JavaLibrary: 对应的 java. 编译结果为 jar
+ */
 apply plugin: 'com.android.application'
-
+/**
+ * 配置插件的一些属性
+ */
 android {
+    /**
+     * 配置编译sdk和编译工具的版本
+     */
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
+    /**
+     * 为所有的 build variants 设置默认值
+     */
     defaultConfig {
         applicationId "com.mk.workdemo"
         minSdkVersion 17
@@ -18,13 +33,25 @@ android {
         }
     }
 }
-
+/**
+ * 配置这个项目的依赖，这些原来来自于Top-level中的
+ */
 dependencies {
+    /**
+     * `fileTree` 导入 libs 目录下的所有 jar 文件
+     */
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    /**
+     * 想导入本地 aar, 首先需要指明本地 aar 的位置, 如下 `repositories` 中所示, 我们把 aar 放在了
+     * Module-level 的 libs 目录下. 然后引用这个文件即可.
+     */
+    // compile(name: 'components', ext: 'aar')
+
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
     testCompile 'junit:junit:4.12'
 }

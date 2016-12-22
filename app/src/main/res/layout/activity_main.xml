@@ -109,7 +109,18 @@
         android:paddingTop="10dp"
         android:textColor="@color/white"
         android:gravity="center"
-        android:text="自定义radiobutton" />
+        android:text="我的自定义radiobutton" />
+    <TextView
+        android:id="@+id/tv_classloader"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bac_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="我的Classloader" />
 
 
 
