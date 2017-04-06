@@ -122,6 +122,18 @@
         android:gravity="center"
         android:text="我的Classloader" />
 
+    <TextView
+        android:id="@+id/tv_gt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bac_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="我的个推" />
+
 
 
 

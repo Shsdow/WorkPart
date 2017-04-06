@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mk.workdemo">
+          package="com.mk.workdemo">
 
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera"/>
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+
+    <!-- iBeancon功能所需权限 -->;
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".WorkApplition"
@@ -17,24 +25,34 @@
         android:theme="@style/AnimActivity">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.BaseAcitivity" />
-        <activity android:name=".activities.TitleActivity" />
-        <activity android:name=".activities.SecondAcitivity" />
-        <activity android:name=".testActivities.DialogTestActivity" />
-        <activity android:name=".imageCompress.ImageCompressActivity" />
-        <activity android:name=".surfaceview_camera.TakePhotoActivity" />
-        <activity android:name=".draw.colock.CanvasColockActivity" />
-        <activity android:name=".activities.RotateRectActivity" />
-        <activity android:name=".draw.colock.MatrixChangeAcitvity" />
-        <activity android:name=".drawable.DrawableActivity" />
-        <activity android:name=".drawable.LayerDrawableActivity" />
-        <activity android:name=".activities.CustomButtonActivity" />
-        <activity android:name=".activities.MyClassLoaderActivity"></activity>
+        <activity android:name=".activities.BaseAcitivity"/>
+        <activity android:name=".activities.TitleActivity"/>
+        <activity android:name=".activities.SecondAcitivity"/>
+        <activity android:name=".testActivities.DialogTestActivity"/>
+        <activity android:name=".imageCompress.ImageCompressActivity"/>
+        <activity android:name=".surfaceview_camera.TakePhotoActivity"/>
+        <activity android:name=".draw.colock.CanvasColockActivity"/>
+        <activity android:name=".activities.RotateRectActivity"/>
+        <activity android:name=".draw.colock.MatrixChangeAcitvity"/>
+        <activity android:name=".drawable.DrawableActivity"/>
+        <activity android:name=".drawable.LayerDrawableActivity"/>
+        <activity android:name=".activities.CustomButtonActivity"/>
+        <activity android:name=".activities.MyClassLoaderActivity"/>
+        <activity android:name=".GeTuiActivity"/>
+
+
+        <service android:name=".GeTuiIntentService"/>
+        <service
+            android:name="com.mk.workdemo.GeTuiDemoPublishService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
     </application>
 
 </manifest>

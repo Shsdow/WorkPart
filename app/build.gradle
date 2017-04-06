@@ -6,6 +6,7 @@
  * JavaLibrary: 对应的 java. 编译结果为 jar
  */
 apply plugin: 'com.android.application'
+apply plugin: 'com.antfortune.freeline'
 /**
  * 配置插件的一些属性
  */
@@ -14,7 +15,7 @@ android {
      * 配置编译sdk和编译工具的版本
      */
     compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    buildToolsVersion "25.0.2"
     /**
      * 为所有的 build variants 设置默认值
      */
@@ -25,10 +26,21 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID : "WyXfdW6TjY8xzOTVE8N428",
+                GETUI_APP_KEY : "ccR1wbuCcwAWtkpwoe55o8",
+                GETUI_APP_SECRET : "hQAytN0vP76xM1dwb5FqSA"
+        ]
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -40,18 +52,19 @@ dependencies {
     /**
      * `fileTree` 导入 libs 目录下的所有 jar 文件
      */
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     /**
      * 想导入本地 aar, 首先需要指明本地 aar 的位置, 如下 `repositories` 中所示, 我们把 aar 放在了
      * Module-level 的 libs 目录下. 然后引用这个文件即可.
      */
-    // compile(name: 'components', ext: 'aar')
-
+    //     compile(name: 'components', ext: 'aar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+//    compile 'com.android.support:appcompat-v7:25.0.2'
     testCompile 'junit:junit:4.12'
+    compile 'com.getui:sdk:2.10.2.0'
+    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
 }

@@ -28,6 +28,8 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
         setRightText("123");
         setRightFirstDrawable(R.drawable.ic_action_exit);
         LogUtil.d("我在MainActivity中");
+        String str="b30979";
+        LogUtil.d("jiij-->"+str.getBytes());
         findViewById(R.id.tv_jump).setOnClickListener(this);
         findViewById(R.id.tv_text_showdialog).setOnClickListener(this);
         findViewById(R.id.tv_image_compress).setOnClickListener(this);
@@ -38,6 +40,7 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
         findViewById(R.id.tv_drawable).setOnClickListener(this);
         findViewById(R.id.tv_rbs).setOnClickListener(this);
         findViewById(R.id.tv_classloader).setOnClickListener(this);
+        findViewById(R.id.tv_gt).setOnClickListener(this);
     }
 
     @Override
@@ -65,17 +68,16 @@ public class MainActivity extends TitleActivity implements View.OnClickListener 
                 startActivity(new Intent(MainActivity.this, MatrixChangeAcitvity.class));
                 break;
             case R.id.tv_drawable:
-
                 startActivity(new Intent(MainActivity.this,DrawableActivity.class));
                 break;
-
             case R.id.tv_rbs:
-
                 startActivity(new Intent(MainActivity.this,CustomButtonActivity.class));
                 break;
             case R.id.tv_classloader:
-
                 startActivity(new Intent(MainActivity.this,MyClassLoaderActivity.class));
+                break;
+            case R.id.tv_gt:
+                startActivity(new Intent(MainActivity.this,GeTuiActivity.class));
                 break;
         }
 
